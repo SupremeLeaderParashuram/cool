@@ -3,6 +3,7 @@ name: Daily Commit
 on:
   schedule:
     - cron: '10 4 * * *'  # Runs daily at 04:10 UTC
+  workflow_dispatch:       # ✅ Enables the "Run workflow" button
 
 jobs:
   daily-commit:
